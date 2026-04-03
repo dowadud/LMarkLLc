@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { COMPANY, SITE, telPrimaryHref } from "@/lib/company";
+import { Logo } from "@/components/logo";
+import { COMPANY, telPrimaryHref } from "@/lib/company";
 import { cn } from "@/lib/utils";
 
 const nav = [
@@ -20,11 +21,8 @@ export function SiteHeader() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0b1220]/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex flex-col leading-tight">
-          <span className="text-sm font-bold tracking-tight text-white sm:text-base">{SITE.name}</span>
-          <span className="hidden text-[10px] font-medium uppercase tracking-widest text-teal-300/90 sm:block">
-            Color label systems
-          </span>
+        <Link href="/" aria-label="L Mark LLC home">
+          <Logo />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Main">
