@@ -70,7 +70,7 @@ const why = [
 ];
 
 export default function HomePage() {
-  const featured = getFeaturedProducts(10);
+  const featured = getFeaturedProducts(11);
 
   return (
     <div className="flex flex-col">

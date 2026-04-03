@@ -23,17 +23,39 @@ export const products: Product[] = [
      FEATURED — user-supplied product photography
   ───────────────────────────────────────────────────────────── */
   {
+    slug: "astrojet-aj-1300-expanded",
+    name: "AstroJet AJ-1300 Expanded Width Digital Printer",
+    category: "Direct-to-corrugated inkjet",
+    shortDescription:
+      "Base AJ-1300 configuration—1300 mm feed width, up to 27 m/min, 1200 dpi direct-to-corrugated printing with water-based sustainable inks. No labels, no plates.",
+    specs: [
+      { label: "Max feed width", value: "1300 mm" },
+      { label: "Max print width", value: "1066 mm" },
+      { label: "Max print height", value: "200 mm" },
+      { label: "Max print speed", value: "27 m/min" },
+      { label: "Max resolution", value: "1200 dpi" },
+      { label: "Ink", value: "Pigmented and dye water-based" },
+      { label: "SKU", value: "1003-0001311" },
+    ],
+    image: "/images/products/astrojet-aj-1300.webp",
+    imageStatus: "final",
+    price: "$176,200",
+    cta: { label: "Request a quote", href: "/#quote" },
+    featured: true,
+  },
+  {
     slug: "astrojet-aj-1300-stacker",
     name: "AstroJet AJ-1300 Printer | Automatic Feeder | Automatic Stacker",
-    category: "Industrial inkjet",
+    category: "Direct-to-corrugated inkjet",
     shortDescription:
-      "Full-production inkjet platform with automatic feeder and stacker—designed for high-volume continuous runs where downtime is not an option.",
+      "AJ-1300 with automatic feeder and stacker—built for uninterrupted high-volume corrugated runs where operator intervention needs to be as close to zero as possible.",
     specs: [
-      { label: "Web width", value: "12.75 in (324 mm) class" },
-      { label: "Resolution", value: "Up to 1600 dpi" },
+      { label: "Max feed width", value: "1300 mm" },
+      { label: "Max print width", value: "1066 mm" },
+      { label: "Max print speed", value: "27 m/min" },
+      { label: "Max resolution", value: "1200 dpi" },
       { label: "Feed / exit", value: "Automatic feeder + automatic stacker" },
-      { label: "Markets", value: "Logistics, industrial, contract convertors" },
-      { label: "Integration", value: "ERP / WMS print-engine compatible" },
+      { label: "Ink", value: "Pigmented and dye water-based" },
     ],
     image: "/images/products/astrojet-aj-1300-stacker-official.png",
     imageStatus: "final",
@@ -44,15 +66,16 @@ export const products: Product[] = [
   {
     slug: "astrojet-aj-1300-exit-table",
     name: "AstroJet AJ-1300 Printer Automatic Feeder | Exit Table",
-    category: "Industrial inkjet",
+    category: "Direct-to-corrugated inkjet",
     shortDescription:
-      "AJ-1300 configured with automatic feeder and exit table—perfect when downstream finishing handles stacking or when floor space favors an open exit.",
+      "AJ-1300 with automatic feeder and exit table—ideal when downstream finishing handles output or floor layout needs an open-ended delivery.",
     specs: [
-      { label: "Web width", value: "12.75 in (324 mm) class" },
-      { label: "Resolution", value: "Up to 1600 dpi" },
+      { label: "Max feed width", value: "1300 mm" },
+      { label: "Max print width", value: "1066 mm" },
+      { label: "Max print speed", value: "27 m/min" },
+      { label: "Max resolution", value: "1200 dpi" },
       { label: "Feed / exit", value: "Automatic feeder + exit table" },
-      { label: "Markets", value: "Logistics, industrial, contract convertors" },
-      { label: "Integration", value: "ERP / WMS print-engine compatible" },
+      { label: "Ink", value: "Pigmented and dye water-based" },
     ],
     image: "/images/products/astrojet-aj-1300-exit-table.png",
     imageStatus: "final",
