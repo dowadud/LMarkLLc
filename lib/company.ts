@@ -1,7 +1,7 @@
 /** Site identity — public business facts only; marketing copy lives in page components. */
 export const SITE = {
   name: "L Mark LLC",
-  tagline: "Color label printing solutions for production teams",
+  tagline: "Industrial printing equipment — sales, support & solutions",
   url: "https://www.LMarkLLC.com",
 } as const;
 

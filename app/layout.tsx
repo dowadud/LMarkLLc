@@ -13,11 +13,11 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.LMarkLLC.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${SITE.name} — Color label printers & on-demand systems`,
+    default: `${SITE.name} — Industrial Printing Equipment Vendor`,
     template: `%s | ${SITE.name}`,
   },
   description:
-    "L Mark LLC — color label printer sales and solutions for production teams in Albemarle, NC. Industrial inkjet, pigment durability, finishing, and integration support.",
+    "L Mark LLC — industrial printing equipment vendor in Albemarle, NC. AstroJet, Afinia, Epson, QuickLabel, and TrojanLabel systems with sales and support.",
   keywords: [
     "color label printer",
     "on demand labels",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: SITE.name,
-    title: `${SITE.name} — Color label systems`,
+    title: `${SITE.name} — Industrial Printing Equipment`,
     description: SITE.tagline,
   },
   robots: { index: true, follow: true },

@@ -28,7 +28,7 @@ export function Logo({ className, dark = true }: { className?: string; dark?: bo
           L MARK
         </span>
         <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-teal-400">
-          LLC
+          Equipment Vendor
         </span>
       </div>
     </div>

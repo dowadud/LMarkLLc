@@ -15,7 +15,7 @@ export function SiteFooter() {
           <div>
             <p className="text-lg font-bold text-white">{SITE.name}</p>
             <p className="mt-3 max-w-sm text-sm leading-relaxed">
-              Color label printer sales and solutions for production teams. Serving Albemarle, NC and
+              Industrial printing equipment vendor — sales, support & solutions. Serving Albemarle, NC and
               customers nationwide with on-demand labeling systems.
             </p>
           </div>
