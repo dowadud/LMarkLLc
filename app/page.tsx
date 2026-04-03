@@ -70,7 +70,7 @@ const why = [
 ];
 
 export default function HomePage() {
-  const featured = getFeaturedProducts(6);
+  const featured = getFeaturedProducts(9);
 
   return (
     <div className="flex flex-col">
@@ -158,12 +158,12 @@ export default function HomePage() {
                 Printers teams spec first
               </h2>
               <p className="mt-3 max-w-2xl text-slate-600">
-                Fifteen curated systems spanning industrial inkjet, pigment durability, and digital finishing—each
+                Nine flagship systems spanning industrial inkjet, digital label presses, and roll-to-roll—each
                 with structured specs to speed technical review.
               </p>
             </div>
             <Button asChild variant="outline" className="w-fit rounded-xl border-slate-300">
-              <Link href="/products">View all 15</Link>
+              <Link href="/products">View full catalog</Link>
             </Button>
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

@@ -1,6 +1,7 @@
 /**
- * Curated equipment catalog (15 items). Names align with manufacturer model lines;
- * descriptions and positioning copy are original for this site.
+ * L Mark LLC — equipment catalog.
+ * The 9 user-supplied hero products lead the list (featured: true).
+ * Additional catalog items follow.
  */
 export type Product = {
   slug: string;
@@ -8,7 +9,7 @@ export type Product = {
   category: string;
   shortDescription: string;
   specs: { label: string; value: string }[];
-  /** Public path under /public — use placeholder until final photography is approved */
+  /** Public path under /public */
   image: string;
   imageStatus: "placeholder" | "final";
   cta: { label: string; href: string };
@@ -16,6 +17,175 @@ export type Product = {
 };
 
 export const products: Product[] = [
+  /* ─────────────────────────────────────────────────────────────
+     FEATURED — user-supplied product photography
+  ───────────────────────────────────────────────────────────── */
+  {
+    slug: "astrojet-aj-1300",
+    name: "AstroJet AJ-1300",
+    category: "Industrial inkjet",
+    shortDescription:
+      "Full-production inkjet platform with automatic feeder and stacker—designed for high-volume continuous runs where downtime is not an option.",
+    specs: [
+      { label: "Web width", value: "12.75 in (324 mm) class" },
+      { label: "Resolution", value: "Up to 1600 dpi" },
+      { label: "Feed / exit", value: "Automatic feeder + stacker configuration" },
+      { label: "Markets", value: "Logistics, industrial, contract convertors" },
+      { label: "Integration", value: "ERP / WMS print-engine compatible" },
+    ],
+    image: "/images/products/astrojet-aj-1300.webp",
+    imageStatus: "final",
+    cta: { label: "Request a quote", href: "/#quote" },
+    featured: true,
+  },
+  {
+    slug: "astrojet-aj-800",
+    name: "AstroJet AJ-800",
+    category: "Direct-to-package inkjet",
+    shortDescription:
+      "Direct-to-package color printing that eliminates the label entirely—ideal when speed and sustainability matter more than traditional roll-feed workflows.",
+    specs: [
+      { label: "Print mode", value: "Direct to package / container surface" },
+      { label: "Resolution", value: "High-quality CMYK inkjet" },
+      { label: "Target market", value: "Packaging lines, sustainability-driven brands" },
+      { label: "Configuration", value: "Inline and standalone options" },
+      { label: "Output", value: "Vivid color without label substrate cost" },
+    ],
+    image: "/images/products/astrojet-aj-800.webp",
+    imageStatus: "final",
+    cta: { label: "Request a quote", href: "/#quote" },
+    featured: true,
+  },
+  {
+    slug: "afinia-dlp-2100",
+    name: "Afinia DLP-2100",
+    category: "Digital label press",
+    shortDescription:
+      "High-volume digital label press engineered for converters and in-plant label rooms that need toner-class durability with short-run flexibility.",
+    specs: [
+      { label: "Technology", value: "Digital electrophotographic press" },
+      { label: "Volume posture", value: "High-volume production shifts" },
+      { label: "Color", value: "CMYK + optional specialty channels" },
+      { label: "Substrate range", value: "Paper, film, and specialty label stocks" },
+      { label: "Best for", value: "Converters, brand owners, co-packers" },
+    ],
+    image: "/images/products/afinia-dlp-2100.jpg",
+    imageStatus: "final",
+    cta: { label: "Request a quote", href: "/#quote" },
+    featured: true,
+  },
+  {
+    slug: "afinia-dlp-2200",
+    name: "Afinia DLP-2200",
+    category: "Digital label press",
+    shortDescription:
+      "Next step up from the DLP-2100—wider web and higher throughput for operations where the job queue never stops growing.",
+    specs: [
+      { label: "Technology", value: "Digital electrophotographic press" },
+      { label: "Web width", value: "Wider than DLP-2100 class" },
+      { label: "Speed", value: "Production duty cycle" },
+      { label: "Finishing", value: "Pairs with digital die-cutting workflow" },
+      { label: "Applications", value: "Prime labels, regulated industries, retail" },
+    ],
+    image: "/images/products/afinia-dlp-2200.jpg",
+    imageStatus: "final",
+    cta: { label: "Request a quote", href: "/#quote" },
+    featured: true,
+  },
+  {
+    slug: "afinia-x350",
+    name: "Afinia X350",
+    category: "Roll-to-roll press",
+    shortDescription:
+      "Digital roll-to-roll press that bridges desktop output and industrial scale—high-color fidelity for demanding brand-owner specs.",
+    specs: [
+      { label: "Configuration", value: "Roll-to-roll digital press" },
+      { label: "Print width", value: "Up to 8.5 in (216 mm)" },
+      { label: "Ink", value: "CMYK aqueous system" },
+      { label: "Resolution", value: "Up to 1600 dpi" },
+      { label: "Target", value: "Craft brands, nutraceuticals, specialty foods" },
+    ],
+    image: "/images/products/afinia-x350.webp",
+    imageStatus: "final",
+    cta: { label: "Request a quote", href: "/#quote" },
+    featured: true,
+  },
+  {
+    slug: "epson-cw-c6500a",
+    name: "Epson ColorWorks CW-C6500A",
+    category: "Industrial inkjet",
+    shortDescription:
+      "Wide-web industrial color label printer delivering 8-inch print paths for ingredient panels, multilingual labels, and bold retail graphics.",
+    specs: [
+      { label: "Max print width", value: "8 in (203 mm) class" },
+      { label: "Finish options", value: "Gloss / matte model families" },
+      { label: "Ink technology", value: "PrecisionCore, pigment options" },
+      { label: "Integration", value: "SAP / ERP-friendly drivers" },
+      { label: "Ideal volumes", value: "Growing SKU mixes, contract packers" },
+    ],
+    image: "/images/products/epson-cw-c6500a-official.jpg",
+    imageStatus: "final",
+    cta: { label: "Request a quote", href: "/#quote" },
+    featured: true,
+  },
+  {
+    slug: "quicklabel-ql-435",
+    name: "QuickLabel QL-435",
+    category: "Production inkjet",
+    shortDescription:
+      "Compact A3 digital inkjet label press delivering production speed in a space-efficient footprint—great for varied SKU environments.",
+    specs: [
+      { label: "Format", value: "A3 inkjet digital press" },
+      { label: "Resolution", value: "Up to 1200 dpi" },
+      { label: "Speed", value: "Production inkjet class" },
+      { label: "Media range", value: "Paper and film label stocks" },
+      { label: "Fit", value: "Mid-size manufacturing, private label" },
+    ],
+    image: "/images/products/quicklabel-ql-435.webp",
+    imageStatus: "final",
+    cta: { label: "Request a quote", href: "/#quote" },
+    featured: true,
+  },
+  {
+    slug: "trojanlabel-t2",
+    name: "TrojanLabel T2",
+    category: "High-volume digital press",
+    shortDescription:
+      "High-volume digital label press known for vivid color and industrial uptime—the T2 is a flagship system for serious label converters.",
+    specs: [
+      { label: "Technology", value: "High-speed inkjet roll-to-roll" },
+      { label: "Print width", value: "8.5 in (216 mm) class" },
+      { label: "Resolution", value: "Up to 1600 dpi" },
+      { label: "Ink options", value: "Dye / pigment (configuration dependent)" },
+      { label: "Applications", value: "Beverage, food, chemical, cosmetic" },
+    ],
+    image: "/images/products/trojanlabel-t2.jpg",
+    imageStatus: "final",
+    cta: { label: "Request a quote", href: "/#quote" },
+    featured: true,
+  },
+  {
+    slug: "trojanlabel-t2-l",
+    name: "TrojanLabel T2-L",
+    category: "Print & laminate press",
+    shortDescription:
+      "Integrated printing and flexible lamination in one pass—ideal for premium labels that need surface protection without a second machine.",
+    specs: [
+      { label: "Configuration", value: "Print + flexible laminator inline" },
+      { label: "Print width", value: "8.5 in (216 mm) class" },
+      { label: "Lamination", value: "Flexible film laminating system" },
+      { label: "Applications", value: "Premium labels, wine, cosmetic, outdoor" },
+      { label: "Benefit", value: "One-pass print + protection" },
+    ],
+    image: "/images/products/trojanlabel-t2-l.webp",
+    imageStatus: "final",
+    cta: { label: "Request a quote", href: "/#quote" },
+    featured: true,
+  },
+
+  /* ─────────────────────────────────────────────────────────────
+     ADDITIONAL CATALOG
+  ───────────────────────────────────────────────────────────── */
   {
     slug: "epson-cw-c6000p",
     name: "Epson ColorWorks CW-C6000P",
@@ -26,31 +196,12 @@ export const products: Product[] = [
       { label: "Max print width", value: "4.25 in (108 mm)" },
       { label: "Resolution", value: "Up to 1200 dpi class" },
       { label: "Ink technology", value: "PrecisionCore printhead, pigment options" },
-      { label: "Connectivity", value: "USB, Ethernet; Wi‑Fi on select SKUs" },
+      { label: "Connectivity", value: "USB, Ethernet; Wi-Fi on select SKUs" },
       { label: "Typical roles", value: "Cartons, chemical drum secondary, logistics" },
     ],
     image: "/images/products/epson-cw-c6000p.jpg",
     imageStatus: "placeholder",
     cta: { label: "Request a quote", href: "/#quote" },
-    featured: true,
-  },
-  {
-    slug: "epson-cw-c6500a",
-    name: "Epson ColorWorks CW-C6500A",
-    category: "Industrial inkjet",
-    shortDescription:
-      "Wider web color printing for labels that need extra real estate—ingredient blocks, multilingual panels, and bold brand marks without sending art out.",
-    specs: [
-      { label: "Max print width", value: "8 in (203 mm) class" },
-      { label: "Finish options", value: "Matte / gloss media families" },
-      { label: "Durability focus", value: "Smudge and water resistance with matched supplies" },
-      { label: "Integration", value: "SAP/ERP-friendly drivers and spooling" },
-      { label: "Ideal volumes", value: "Growing SKU mixes, contract packers" },
-    ],
-    image: "/images/products/epson-cw-c6500a.jpg",
-    imageStatus: "placeholder",
-    cta: { label: "Request a quote", href: "/#quote" },
-    featured: true,
   },
   {
     slug: "epson-cw-c8000",
@@ -68,14 +219,13 @@ export const products: Product[] = [
     image: "/images/products/epson-cw-c8000.jpg",
     imageStatus: "placeholder",
     cta: { label: "Request a quote", href: "/#quote" },
-    featured: true,
   },
   {
     slug: "afinia-l901-plus",
     name: "Afinia L901 Plus",
     category: "Memjet color",
     shortDescription:
-      "Memjet-powered speed for shops that need brilliant color now—not next week. Excellent when batch sizes change daily and artwork revs never stop.",
+      "Memjet-powered speed for shops that need brilliant color now—excellent when batch sizes change daily and artwork revs never stop.",
     specs: [
       { label: "Ink capacity", value: "250 mL tanks (CMYK)" },
       { label: "Speed posture", value: "High IPS class (media dependent)" },
@@ -84,41 +234,6 @@ export const products: Product[] = [
       { label: "Workflow fit", value: "Short runs, versioning, promo packs" },
     ],
     image: "/images/products/afinia-l901-plus.jpg",
-    imageStatus: "placeholder",
-    cta: { label: "Request a quote", href: "/#quote" },
-    featured: true,
-  },
-  {
-    slug: "afinia-l801-plus",
-    name: "Afinia L801 Plus",
-    category: "Memjet color",
-    shortDescription:
-      "Balanced throughput for brands moving off outsourced flexo—keeps color consistent while you right-size inventory and tighten lead times.",
-    specs: [
-      { label: "Print width", value: "8.5 in (216 mm)" },
-      { label: "Ink system", value: "Separate high-capacity tanks" },
-      { label: "Resolution", value: "1600 × 800 / 1600 × 1600 dpi modes" },
-      { label: "Footprint", value: "Bench / worktable friendly" },
-      { label: "Sweet spot", value: "Craft brands, nutraceuticals, specialty foods" },
-    ],
-    image: "/images/products/afinia-l801-plus.jpg",
-    imageStatus: "placeholder",
-    cta: { label: "Learn more", href: "/products/afinia-l801-plus" },
-  },
-  {
-    slug: "afinia-f502-pigment",
-    name: "Afinia F502 (Pigment)",
-    category: "Toner-class durability",
-    shortDescription:
-      "Pigment route for UV and moisture exposure—think bath & body, outdoor goods, and any line where dye inks are a risk.",
-    specs: [
-      { label: "Ink type", value: "Pigment CMYK" },
-      { label: "Print width", value: "8.5 in (216 mm)" },
-      { label: "Resolution", value: "Up to 1600 dpi" },
-      { label: "Media", value: "Matched synthetic and paper stocks" },
-      { label: "Ideal use", value: "Durability-first prime labels" },
-    ],
-    image: "/images/products/afinia-f502-pigment.jpg",
     imageStatus: "placeholder",
     cta: { label: "Request a quote", href: "/#quote" },
   },
@@ -140,23 +255,6 @@ export const products: Product[] = [
     cta: { label: "Learn more", href: "/products/primera-lx910" },
   },
   {
-    slug: "primera-lx3000-pigment",
-    name: "Primera LX3000 (Pigment)",
-    category: "Desktop color",
-    shortDescription:
-      "Pigment tanks for longer outdoor and chemical-adjacent jobs while staying in a desktop envelope—great bridge between office and plant floor.",
-    specs: [
-      { label: "Ink", value: "Pigment CMYK tanks" },
-      { label: "Print width", value: "8 in (203 mm)" },
-      { label: "Durability", value: "Water- and UV-resistant with approved media" },
-      { label: "Software", value: "BarTender and NiceLabel friendly" },
-      { label: "Roles", value: "Compliance-minded small batches" },
-    ],
-    image: "/images/products/primera-lx3000-pigment.png",
-    imageStatus: "placeholder",
-    cta: { label: "Request a quote", href: "/#quote" },
-  },
-  {
     slug: "quicklabel-ql-900",
     name: "QuickLabel QL-900",
     category: "Production inkjet",
@@ -170,41 +268,6 @@ export const products: Product[] = [
       { label: "Fit", value: "Mid-line automation, private label" },
     ],
     image: "/images/products/quicklabel-ql-900.png",
-    imageStatus: "placeholder",
-    cta: { label: "Request a quote", href: "/#quote" },
-    featured: true,
-  },
-  {
-    slug: "quicklabel-ql-120xe",
-    name: "QuickLabel QL-120Xe",
-    category: "Production inkjet",
-    shortDescription:
-      "Narrow-web agility for table-top workflows that still demand industrial reliability—ideal when you need color but not a full wide system.",
-    specs: [
-      { label: "Print width", value: "4.16 in (106 mm) class" },
-      { label: "Resolution", value: "Up to 1200 × 1200 dpi" },
-      { label: "Footprint", value: "Compact for cell-based lines" },
-      { label: "Consumables", value: "CMYK cartridge systems" },
-      { label: "Ideal for", value: "Samples, pilot lines, clinical-style labeling" },
-    ],
-    image: "/images/products/quicklabel-ql-120xe.png",
-    imageStatus: "placeholder",
-    cta: { label: "Learn more", href: "/products/quicklabel-ql-120xe" },
-  },
-  {
-    slug: "vipcolor-vp-750",
-    name: "VIPColor VP-750",
-    category: "Roll-to-roll color",
-    shortDescription:
-      "VIPColor roll systems emphasize approachable operation with vivid retail-ready output—strong when packaging refreshes outpace your vendor queue.",
-    specs: [
-      { label: "Print width", value: "8.5 in (216 mm) class" },
-      { label: "Resolution", value: "Up to 1600 dpi" },
-      { label: "Speed", value: "High IPS class (media dependent)" },
-      { label: "Ink", value: "Aqueous dye / pigment paths (SKU dependent)" },
-      { label: "Teams", value: "Retail brands, co-packers, 3PL value-add" },
-    ],
-    image: "/images/products/vipcolor-vp-750.jpg",
     imageStatus: "placeholder",
     cta: { label: "Request a quote", href: "/#quote" },
   },
@@ -224,59 +287,6 @@ export const products: Product[] = [
     image: "/images/products/trojanlabel-t3-opx.png",
     imageStatus: "placeholder",
     cta: { label: "Request a quote", href: "/#quote" },
-    featured: true,
-  },
-  {
-    slug: "astrojet-aj-1300",
-    name: "AstroJet AJ-1300",
-    category: "Industrial inkjet",
-    shortDescription:
-      "High-speed inkjet line for operations that measure output in linear feet—pair with finishing for a complete in-house label cell.",
-    specs: [
-      { label: "Web width", value: "12.75 in (324 mm) class" },
-      { label: "Resolution", value: "Up to 1600 dpi" },
-      { label: "Positioning", value: "Production floor, integrated workflows" },
-      { label: "Markets", value: "Logistics, industrial, contract convertors" },
-      { label: "Notes", value: "Media and RIP choices affect final certification paths" },
-    ],
-    image: "/images/products/astrojet-aj-1300.png",
-    imageStatus: "placeholder",
-    cta: { label: "Learn more", href: "/products/astrojet-aj-1300" },
-  },
-  {
-    slug: "neuralabel-callisto",
-    name: "NeuraLabel Callisto",
-    category: "High-contrast industrial",
-    shortDescription:
-      "Toner-class durability for harsh scanning environments—when barcodes must read through dust, glare, and warehouse handling stress.",
-    specs: [
-      { label: "Technology", value: "LED electrophotographic (toner)" },
-      { label: "Durability", value: "High smear/scuff resistance on matched stocks" },
-      { label: "Color posture", value: "Spot and process strategies (configuration dependent)" },
-      { label: "Ideal tasks", value: "GHS-minded drum labels, rack labels, asset tags" },
-      { label: "Integration", value: "Windows driver ecosystem" },
-    ],
-    image: "/images/products/neuralabel-callisto.png",
-    imageStatus: "placeholder",
-    cta: { label: "Request a quote", href: "/#quote" },
-  },
-  {
-    slug: "afinia-dlf-220s-dual",
-    name: "Afinia DLF-220S Dual Plotter Cutter",
-    category: "Digital finishing",
-    shortDescription:
-      "Plot, cut, and finish short runs without hard tooling—pairs with inkjet printers to close the loop from PDF to stacked, ready-to-apply labels.",
-    specs: [
-      { label: "Max media width", value: "7.87 in (200 mm)" },
-      { label: "Function", value: "Digital die cutting / finishing" },
-      { label: "Configuration", value: "Dual plotter option for complex paths" },
-      { label: "Pairing", value: "Afinia and other roll-fed color engines" },
-      { label: "Outcome", value: "Reduced die lead time, faster prototyping" },
-    ],
-    image: "/images/products/afinia-dlf-220s-dual.jpg",
-    imageStatus: "placeholder",
-    cta: { label: "Learn more", href: "/products/afinia-dlf-220s-dual" },
-    featured: true,
   },
 ];
 
