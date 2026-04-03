@@ -257,24 +257,6 @@ export const products: Product[] = [
     price: "$14,250",
     cta: { label: "Request a quote", href: "/#quote" },
   },
-  {
-    slug: "trojanlabel-t3-opx",
-    name: "Trojan T3-OPX Wide-Format Direct to Package Printer",
-    category: "Wide-web inkjet",
-    shortDescription:
-      "Wide-web inkjet for labels that refuse to shrink—perfect when your artwork demands panoramic graphics or multi-panel storytelling.",
-    specs: [
-      { label: "Print width", value: "12.75 in (324 mm) class" },
-      { label: "Resolution", value: "Up to 1600 dpi" },
-      { label: "Ink", value: "Aqueous dye / pigment options" },
-      { label: "Throughput", value: "Designed for industrial duty cycles" },
-      { label: "Best for", value: "Beverage, industrial chemical, wide graphics" },
-    ],
-    image: "/images/products/trojanlabel-t3-opx.png",
-    imageStatus: "placeholder",
-    price: "$26,330",
-    cta: { label: "Request a quote", href: "/#quote" },
-  },
 ];
 
 export function getProductBySlug(slug: string): Product | undefined {
