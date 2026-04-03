@@ -7,7 +7,7 @@ export const SITE = {
 
 export const COMPANY = {
   legalName: "L Mark LLC",
-  email: "info@lmarkllc.com",
+  email: "support@lmarkllc.com",
   phoneDisplay: "(704) 486-6258",
   phoneAltDisplay: "(704) 486-6258",
   phoneRaw: "+17044866258",
