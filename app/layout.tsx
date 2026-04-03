@@ -8,7 +8,7 @@ import "./globals.css";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://tcsdigitalsolutions.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.LMarkLLC.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -17,14 +17,15 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description:
-    "Authorized color label printer solutions for production teams—industrial inkjet, durable pigment paths, finishing, and integration support.",
+    "L Mark LLC — color label printer sales and solutions for production teams in Albemarle, NC. Industrial inkjet, pigment durability, finishing, and integration support.",
   keywords: [
     "color label printer",
     "on demand labels",
     "Epson ColorWorks",
     "Afinia label printer",
     "industrial inkjet labels",
-    "Georgia label printer dealer",
+    "Albemarle NC label printer",
+    "North Carolina label printer dealer",
   ],
   openGraph: {
     type: "website",
@@ -45,8 +46,8 @@ const localBusinessSchema = {
   address: {
     "@type": "PostalAddress",
     streetAddress: COMPANY.addressLine1,
-    addressLocality: COMPANY.city,
-    addressRegion: COMPANY.region,
+    addressLocality: "Albemarle",
+    addressRegion: "NC",
     postalCode: COMPANY.postalCode,
     addressCountry: COMPANY.country,
   },

@@ -1,4 +1,4 @@
-# TCS Digital Solutions — marketing site
+# L Mark LLC — marketing site
 
 Polished, conversion-focused Next.js site showcasing **15 curated label printers and finishing systems**, with original copy, structured product data, and placeholder imagery until manufacturer-approved assets arrive.
 

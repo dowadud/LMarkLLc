@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="NeuraLabel Callisto">
+  <rect width="800" height="600" fill="#1a0a00"/>
+  <rect x="0" y="0" width="800" height="5" fill="#fb923c" opacity="0.9"/>
+  <rect x="0" y="595" width="800" height="5" fill="#fb923c" opacity="0.35"/>
+  <rect x="80" y="280" width="640" height="2" fill="#fb923c" opacity="0.2"/>
+  <rect x="80" y="380" width="640" height="2" fill="#fb923c" opacity="0.15"/>
+  <text x="400" y="170" text-anchor="middle" fill="#fb923c" font-family="system-ui,sans-serif" font-size="80" opacity="0.12">&#128424;</text>
+  <text x="400" y="340" text-anchor="middle" fill="#ffffff" font-family="system-ui,sans-serif" font-size="30" font-weight="700">NeuraLabel Callisto</text>
+  <text x="400" y="400" text-anchor="middle" fill="#fb923c" font-family="system-ui,sans-serif" font-size="13" font-weight="600" letter-spacing="4">HIGH-CONTRAST INDUSTRIAL</text>
+  <text x="400" y="530" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif" font-size="12">Image pending — L Mark LLC · (704) 486-6258 · Albemarle, NC</text>
+</svg>

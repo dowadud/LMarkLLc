@@ -108,7 +108,7 @@ export function QuoteSection() {
               </Button>
               <p className="text-xs text-slate-500">
                 Opens your email client with a pre-filled message to {COMPANY.email}. Prefer phone? Call{" "}
-                <a className="font-medium text-teal-800 hover:underline" href="tel:+16788242304">
+                <a className="font-medium text-teal-800 hover:underline" href="tel:+17044866258">
                   {COMPANY.phoneDisplay}
                 </a>
                 .

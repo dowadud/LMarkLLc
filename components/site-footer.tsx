@@ -15,8 +15,8 @@ export function SiteFooter() {
           <div>
             <p className="text-lg font-bold text-white">{SITE.name}</p>
             <p className="mt-3 max-w-sm text-sm leading-relaxed">
-              Authorized color label printer solutions, supplies, and integration support for teams that
-              print on demand—not months in advance.
+              Color label printer sales and solutions for production teams. Serving Albemarle, NC and
+              customers nationwide with on-demand labeling systems.
             </p>
           </div>
           <div>
@@ -34,10 +34,6 @@ export function SiteFooter() {
                 <Phone className="size-4 shrink-0 text-teal-500" aria-hidden />
                 <a href={telPrimaryHref} className="hover:text-white">
                   {COMPANY.phoneDisplay}
-                </a>
-                <span className="text-slate-600">·</span>
-                <a href="tel:+17622086985" className="hover:text-white">
-                  {COMPANY.phoneAltDisplay}
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -63,7 +59,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-12 flex flex-col gap-2 border-t border-slate-800 pt-8 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
-          <p className="text-slate-600">Georgia · Nationwide shipping available</p>
+          <p className="text-slate-600">Albemarle, NC · Serving nationwide</p>
         </div>
       </div>
     </footer>

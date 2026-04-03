@@ -143,7 +143,7 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-wide text-slate-500">
             <span className="rounded-full bg-slate-100 px-3 py-1">Industrial duty cycles</span>
             <span className="rounded-full bg-slate-100 px-3 py-1">On-demand color</span>
-            <span className="rounded-full bg-slate-100 px-3 py-1">Peachtree Corners, GA</span>
+            <span className="rounded-full bg-slate-100 px-3 py-1">Albemarle, NC</span>
           </div>
         </div>
       </section>
