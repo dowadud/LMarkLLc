@@ -23,7 +23,7 @@ export const products: Product[] = [
      FEATURED — user-supplied product photography
   ───────────────────────────────────────────────────────────── */
   {
-    slug: "astrojet-aj-1300",
+    slug: "astrojet-aj-1300-stacker",
     name: "AstroJet AJ-1300 Printer | Automatic Feeder | Automatic Stacker",
     category: "Industrial inkjet",
     shortDescription:
@@ -31,13 +31,32 @@ export const products: Product[] = [
     specs: [
       { label: "Web width", value: "12.75 in (324 mm) class" },
       { label: "Resolution", value: "Up to 1600 dpi" },
-      { label: "Feed / exit", value: "Automatic feeder + stacker configuration" },
+      { label: "Feed / exit", value: "Automatic feeder + automatic stacker" },
       { label: "Markets", value: "Logistics, industrial, contract convertors" },
       { label: "Integration", value: "ERP / WMS print-engine compatible" },
     ],
-    image: "/images/products/astrojet-aj-1300.webp",
+    image: "/images/products/astrojet-aj-1300-stacker-official.png",
     imageStatus: "final",
     price: "$249,000",
+    cta: { label: "Request a quote", href: "/#quote" },
+    featured: true,
+  },
+  {
+    slug: "astrojet-aj-1300-exit-table",
+    name: "AstroJet AJ-1300 Printer Automatic Feeder | Exit Table",
+    category: "Industrial inkjet",
+    shortDescription:
+      "AJ-1300 configured with automatic feeder and exit table—perfect when downstream finishing handles stacking or when floor space favors an open exit.",
+    specs: [
+      { label: "Web width", value: "12.75 in (324 mm) class" },
+      { label: "Resolution", value: "Up to 1600 dpi" },
+      { label: "Feed / exit", value: "Automatic feeder + exit table" },
+      { label: "Markets", value: "Logistics, industrial, contract convertors" },
+      { label: "Integration", value: "ERP / WMS print-engine compatible" },
+    ],
+    image: "/images/products/astrojet-aj-1300-exit-table.png",
+    imageStatus: "final",
+    price: "$210,300",
     cta: { label: "Request a quote", href: "/#quote" },
     featured: true,
   },
@@ -54,7 +73,7 @@ export const products: Product[] = [
       { label: "Configuration", value: "Inline and standalone options" },
       { label: "Output", value: "Vivid color without label substrate cost" },
     ],
-    image: "/images/products/astrojet-aj-800.webp",
+    image: "/images/products/astrojet-aj-800.png",
     imageStatus: "final",
     price: "$60,000",
     cta: { label: "Request a quote", href: "/#quote" },
