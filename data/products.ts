@@ -24,7 +24,7 @@ export const products: Product[] = [
   ───────────────────────────────────────────────────────────── */
   {
     slug: "astrojet-aj-1300",
-    name: "AstroJet AJ-1300",
+    name: "AstroJet AJ-1300 Printer | Automatic Feeder | Automatic Stacker",
     category: "Industrial inkjet",
     shortDescription:
       "Full-production inkjet platform with automatic feeder and stacker—designed for high-volume continuous runs where downtime is not an option.",
@@ -43,7 +43,7 @@ export const products: Product[] = [
   },
   {
     slug: "astrojet-aj-800",
-    name: "AstroJet AJ-800",
+    name: "AstroJet AJ-800 Direct-to-Package Printer",
     category: "Direct-to-package inkjet",
     shortDescription:
       "Direct-to-package color printing that eliminates the label entirely—ideal when speed and sustainability matter more than traditional roll-feed workflows.",
@@ -62,7 +62,7 @@ export const products: Product[] = [
   },
   {
     slug: "afinia-dlp-2100",
-    name: "Afinia DLP-2100",
+    name: "Afinia DLP-2100 High Volume Digital Label Press",
     category: "Digital label press",
     shortDescription:
       "High-volume digital label press engineered for converters and in-plant label rooms that need toner-class durability with short-run flexibility.",
@@ -81,7 +81,7 @@ export const products: Product[] = [
   },
   {
     slug: "afinia-dlp-2200",
-    name: "Afinia DLP-2200",
+    name: "Afinia DLP-2200 High Volume Digital Label Press",
     category: "Digital label press",
     shortDescription:
       "Next step up from the DLP-2100—wider web and higher throughput for operations where the job queue never stops growing.",
@@ -100,7 +100,7 @@ export const products: Product[] = [
   },
   {
     slug: "afinia-x350",
-    name: "Afinia X350",
+    name: "Afinia X350 Digital Roll to Roll Press",
     category: "Roll-to-roll press",
     shortDescription:
       "Digital roll-to-roll press that bridges desktop output and industrial scale—high-color fidelity for demanding brand-owner specs.",
@@ -119,7 +119,7 @@ export const products: Product[] = [
   },
   {
     slug: "epson-cw-c6500a",
-    name: "Epson ColorWorks CW-C6500A",
+    name: "Epson ColorWorks CW-C6500A Color Inkjet Label Printer",
     category: "Industrial inkjet",
     shortDescription:
       "Wide-web industrial color label printer delivering 8-inch print paths for ingredient panels, multilingual labels, and bold retail graphics.",
@@ -138,7 +138,7 @@ export const products: Product[] = [
   },
   {
     slug: "quicklabel-ql-435",
-    name: "QuickLabel QL-435",
+    name: "QuickLabel QL-435 Compact A3 Digital Inkjet Label Press",
     category: "Production inkjet",
     shortDescription:
       "Compact A3 digital inkjet label press delivering production speed in a space-efficient footprint—great for varied SKU environments.",
@@ -157,7 +157,7 @@ export const products: Product[] = [
   },
   {
     slug: "trojanlabel-t2",
-    name: "TrojanLabel T2",
+    name: "Trojan Label T2 High Volume Digital Label Press",
     category: "High-volume digital press",
     shortDescription:
       "High-volume digital label press known for vivid color and industrial uptime—the T2 is a flagship system for serious label converters.",
@@ -176,7 +176,7 @@ export const products: Product[] = [
   },
   {
     slug: "trojanlabel-t2-l",
-    name: "TrojanLabel T2-L",
+    name: "Trojan T2-L Printer Flexible Laminator Packaging Digital Press",
     category: "Print & laminate press",
     shortDescription:
       "Integrated printing and flexible lamination in one pass—ideal for premium labels that need surface protection without a second machine.",
@@ -199,7 +199,7 @@ export const products: Product[] = [
   ───────────────────────────────────────────────────────────── */
   {
     slug: "afinia-l901-plus",
-    name: "Afinia L901 Plus",
+    name: "Afinia L901 Plus Industrial Inline Color Label Printer",
     category: "Memjet color",
     shortDescription:
       "Memjet-powered speed for shops that need brilliant color now—excellent when batch sizes change daily and artwork revs never stop.",
@@ -217,7 +217,7 @@ export const products: Product[] = [
   },
   {
     slug: "trojanlabel-t3-opx",
-    name: "TrojanLabel T3-OPX",
+    name: "Trojan T3-OPX Wide-Format Direct to Package Printer",
     category: "Wide-web inkjet",
     shortDescription:
       "Wide-web inkjet for labels that refuse to shrink—perfect when your artwork demands panoramic graphics or multi-panel storytelling.",
