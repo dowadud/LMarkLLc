@@ -134,19 +134,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Trust strip */}
-      <section className="border-b border-slate-200 bg-white py-10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-slate-600">
-            Authorized pathways · Media-matched inks · Finishing that closes the loop
-          </p>
-          <div className="flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-wide text-slate-500">
-            <span className="rounded-full bg-slate-100 px-3 py-1">Industrial duty cycles</span>
-            <span className="rounded-full bg-slate-100 px-3 py-1">On-demand color</span>
-            <span className="rounded-full bg-slate-100 px-3 py-1">Albemarle, NC</span>
-          </div>
-        </div>
-      </section>
 
       {/* Featured products */}
       <section className="bg-[var(--background)] py-20 sm:py-24">
