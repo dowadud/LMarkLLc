@@ -12,6 +12,8 @@ export type Product = {
   /** Public path under /public */
   image: string;
   imageStatus: "placeholder" | "final";
+  /** Display price string, e.g. "$42,995" or "Starting at $3,465" */
+  price?: string;
   cta: { label: string; href: string };
   featured?: boolean;
 };
@@ -35,6 +37,7 @@ export const products: Product[] = [
     ],
     image: "/images/products/astrojet-aj-1300.webp",
     imageStatus: "final",
+    price: "$249,000",
     cta: { label: "Request a quote", href: "/#quote" },
     featured: true,
   },
@@ -53,6 +56,7 @@ export const products: Product[] = [
     ],
     image: "/images/products/astrojet-aj-800.webp",
     imageStatus: "final",
+    price: "$60,000",
     cta: { label: "Request a quote", href: "/#quote" },
     featured: true,
   },
@@ -71,6 +75,7 @@ export const products: Product[] = [
     ],
     image: "/images/products/afinia-dlp-2100.jpg",
     imageStatus: "final",
+    price: "$74,995",
     cta: { label: "Request a quote", href: "/#quote" },
     featured: true,
   },
@@ -89,6 +94,7 @@ export const products: Product[] = [
     ],
     image: "/images/products/afinia-dlp-2200.jpg",
     imageStatus: "final",
+    price: "$85,000",
     cta: { label: "Request a quote", href: "/#quote" },
     featured: true,
   },
@@ -107,6 +113,7 @@ export const products: Product[] = [
     ],
     image: "/images/products/afinia-x350.webp",
     imageStatus: "final",
+    price: "$80,995",
     cta: { label: "Request a quote", href: "/#quote" },
     featured: true,
   },
@@ -125,6 +132,7 @@ export const products: Product[] = [
     ],
     image: "/images/products/epson-cw-c6500a-official.jpg",
     imageStatus: "final",
+    price: "Starting at $3,465",
     cta: { label: "Request a quote", href: "/#quote" },
     featured: true,
   },
@@ -143,6 +151,7 @@ export const products: Product[] = [
     ],
     image: "/images/products/quicklabel-ql-435.webp",
     imageStatus: "final",
+    price: "$42,995",
     cta: { label: "Request a quote", href: "/#quote" },
     featured: true,
   },
@@ -161,6 +170,7 @@ export const products: Product[] = [
     ],
     image: "/images/products/trojanlabel-t2.jpg",
     imageStatus: "final",
+    price: "$67,195",
     cta: { label: "Request a quote", href: "/#quote" },
     featured: true,
   },
@@ -179,6 +189,7 @@ export const products: Product[] = [
     ],
     image: "/images/products/trojanlabel-t2-l.webp",
     imageStatus: "final",
+    price: "$78,395",
     cta: { label: "Request a quote", href: "/#quote" },
     featured: true,
   },
@@ -186,40 +197,6 @@ export const products: Product[] = [
   /* ─────────────────────────────────────────────────────────────
      ADDITIONAL CATALOG
   ───────────────────────────────────────────────────────────── */
-  {
-    slug: "epson-cw-c6000p",
-    name: "Epson ColorWorks CW-C6000P",
-    category: "Industrial inkjet",
-    shortDescription:
-      "Peel-and-present color label engine built for steady mid-volume runs, barcode clarity, and GHS-minded durability when paired with approved media.",
-    specs: [
-      { label: "Max print width", value: "4.25 in (108 mm)" },
-      { label: "Resolution", value: "Up to 1200 dpi class" },
-      { label: "Ink technology", value: "PrecisionCore printhead, pigment options" },
-      { label: "Connectivity", value: "USB, Ethernet; Wi-Fi on select SKUs" },
-      { label: "Typical roles", value: "Cartons, chemical drum secondary, logistics" },
-    ],
-    image: "/images/products/epson-cw-c6000p.jpg",
-    imageStatus: "placeholder",
-    cta: { label: "Request a quote", href: "/#quote" },
-  },
-  {
-    slug: "epson-cw-c8000",
-    name: "Epson ColorWorks CW-C8000",
-    category: "Industrial inkjet",
-    shortDescription:
-      "High-duty cycle color label production with headroom for demanding shifts—built for teams that cannot afford ribbon changeovers or preprint delays.",
-    specs: [
-      { label: "Throughput posture", value: "High-volume CMYK pipeline" },
-      { label: "Max print width", value: "8 in (203 mm) class" },
-      { label: "Ink families", value: "Gloss / matte black strategies for contrast" },
-      { label: "Controls", value: "Operator LCD, remote monitoring patterns" },
-      { label: "Best for", value: "Food, beverage, chemical, contract manufacturing" },
-    ],
-    image: "/images/products/epson-cw-c8000.jpg",
-    imageStatus: "placeholder",
-    cta: { label: "Request a quote", href: "/#quote" },
-  },
   {
     slug: "afinia-l901-plus",
     name: "Afinia L901 Plus",
@@ -235,40 +212,7 @@ export const products: Product[] = [
     ],
     image: "/images/products/afinia-l901-plus.jpg",
     imageStatus: "placeholder",
-    cta: { label: "Request a quote", href: "/#quote" },
-  },
-  {
-    slug: "primera-lx910",
-    name: "Primera LX910",
-    category: "Desktop color",
-    shortDescription:
-      "Compact color engine for prototypes, seasonal drops, and private-label pilots—minimal floor space, maximum flexibility for fast-moving SKUs.",
-    specs: [
-      { label: "Print technology", value: "Inkjet color" },
-      { label: "Print width", value: "Up to 8 in (203 mm)" },
-      { label: "Resolution", value: "4800 dpi class" },
-      { label: "Connectivity", value: "USB and Ethernet" },
-      { label: "Ideal teams", value: "R&D, microbreweries, boutique cosmetics" },
-    ],
-    image: "/images/products/primera-lx910.png",
-    imageStatus: "placeholder",
-    cta: { label: "Learn more", href: "/products/primera-lx910" },
-  },
-  {
-    slug: "quicklabel-ql-900",
-    name: "QuickLabel QL-900",
-    category: "Production inkjet",
-    shortDescription:
-      "Workhorse color inkjet for manufacturers that live in changeovers—swap art, keep registration tight, and feed continuous or fanfold efficiently.",
-    specs: [
-      { label: "Print width", value: "8.64 in (219 mm) class" },
-      { label: "Resolution", value: "Up to 1200 dpi" },
-      { label: "Speed posture", value: "Production-oriented throughput" },
-      { label: "Inks", value: "Dye or pigment strategies (configuration dependent)" },
-      { label: "Fit", value: "Mid-line automation, private label" },
-    ],
-    image: "/images/products/quicklabel-ql-900.png",
-    imageStatus: "placeholder",
+    price: "$14,250",
     cta: { label: "Request a quote", href: "/#quote" },
   },
   {
@@ -286,6 +230,7 @@ export const products: Product[] = [
     ],
     image: "/images/products/trojanlabel-t3-opx.png",
     imageStatus: "placeholder",
+    price: "$26,330",
     cta: { label: "Request a quote", href: "/#quote" },
   },
 ];

@@ -28,6 +28,11 @@ export function ProductCard({ product, priority }: Props) {
           </Link>
         </h3>
         <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-slate-600">{product.shortDescription}</p>
+        {product.price && (
+          <p className="mt-3 text-xl font-bold text-slate-900">
+            {product.price}
+          </p>
+        )}
         <div className="mt-4 flex flex-wrap items-center gap-3">
           <Link
             href={product.cta.href}

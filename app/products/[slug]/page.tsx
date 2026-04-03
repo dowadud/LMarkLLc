@@ -58,6 +58,10 @@ export default async function ProductDetailPage({ params }: Props) {
             <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{product.name}</h1>
             <p className="mt-4 text-lg leading-relaxed text-slate-600">{product.shortDescription}</p>
 
+            {product.price && (
+              <p className="mt-5 text-3xl font-extrabold text-slate-900">{product.price}</p>
+            )}
+
             <div className="mt-8">
               <h2 className="text-sm font-bold uppercase tracking-wide text-slate-900">Key specifications</h2>
               <dl className="mt-4 divide-y divide-slate-200 rounded-xl border border-slate-200 bg-white">
