@@ -8,9 +8,9 @@ export const SITE = {
 export const COMPANY = {
   legalName: "L Mark LLC",
   email: "support@lmarkllc.com",
-  phoneDisplay: "(704) 486-6258",
-  phoneAltDisplay: "(704) 486-6258",
-  phoneRaw: "+17044866258",
+  phoneDisplay: "1(888)535-8682",
+  phoneAltDisplay: "1(888)535-8682",
+  phoneRaw: "+18885358682",
   addressLine1: "1934 E Main St",
   city: "Albemarle",
   region: "NC",
@@ -19,4 +19,4 @@ export const COMPANY = {
 } as const;
 
 /** Primary sales line — E.164 for tel: links */
-export const telPrimaryHref = "tel:+17044866258";
+export const telPrimaryHref = "tel:+18885358682";
